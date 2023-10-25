@@ -27,8 +27,10 @@ module.exports = {
         allow: ["error", "info", "table", "warn"],
       },
     ],
-    "no-unused-vars": ["error", { destructuredArrayIgnorePattern: "^_" }],
-    "react/prop-types": "off",
+ "no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_", "destructuredArrayIgnorePattern": "^_" }
+    ],    "react/prop-types": "off",
     "use-encapsulation/prefer-custom-hooks": 1,
   },
   settings: {
